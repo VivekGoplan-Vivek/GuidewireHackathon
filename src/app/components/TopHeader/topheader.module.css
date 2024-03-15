@@ -1,0 +1,54 @@
+.topHeaderWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.topHeaderTxt{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.listOfContent{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.listTxt{
+    margin-right: 10px;
+}
+.listTxt:hover{
+    color: #1D0AFF;
+    text-decoration: underline;
+}
+
+.homePageWrapper{
+    padding: 20px;
+  
+}
+
+
+
+
+@media (min-width: 768px){
+    .topHeaderWrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px){
+    .listOfContent{
+        display: none !important;
+    }
+    .topHeaderTxt{
+        margin: 0 auto;
+    }
+   
+
+}

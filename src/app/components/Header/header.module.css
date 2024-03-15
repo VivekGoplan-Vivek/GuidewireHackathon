@@ -1,0 +1,19 @@
+.headerInfoWrapper{
+    text-align: center;
+    margin-top: 15px;
+
+}
+.headerSubTxt{
+    font-size: 10px;
+}
+.headerTxt{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+@media (min-width: 768px) {
+    .headerInfoWrapper{
+        margin-top: 40px;
+    }
+}

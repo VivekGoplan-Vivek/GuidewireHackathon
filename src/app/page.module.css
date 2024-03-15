@@ -1,0 +1,12 @@
+.homePageWrapper{
+    padding: 20px;
+  
+}
+
+
+@media (min-width: 768px){
+    .homePageWrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}

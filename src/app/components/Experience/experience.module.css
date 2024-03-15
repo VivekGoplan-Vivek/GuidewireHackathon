@@ -1,0 +1,67 @@
+.experienceWrapper{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+
+}
+
+.experienceTimerContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 254px;
+    border: 1px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+}
+
+.experienceTimer{
+
+}
+
+.experienceCompanyInfoWrap{
+
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.experienceCompanyImgContainer{
+    height: 40px;
+    width: 40px;
+    background: red;
+
+}
+
+.experienceCompanyInfoContainer{
+
+}
+
+.experienceDesignation{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -2px;
+}
+
+.experienceCompanyName{
+    font-size: 14px;
+}
+
+.experienceDate{
+    font-size: 14px;
+}
+
+
+@media(max-width:769px){
+
+    .experienceWrapper{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .experienceTimerContainer{
+        margin-top: 30px;
+    }
+}
