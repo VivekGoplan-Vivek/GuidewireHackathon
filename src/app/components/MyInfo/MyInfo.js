@@ -10,7 +10,7 @@ export default function MyInfo() {
                 <img src="Images/vivekgopalan.jpg" className={styles.myInfoProfilePic} alt="profile-pic"></img>
             </div>
             <div className={styles.myInfoContainer}>
-                <div className={styles.myInfoHello}>Hello, I'm</div>
+                <div className={styles.myInfoHello}>Hello, Iam</div>
                 <div className={styles.myInfoName}>Vivek Gopalan</div>
                 <div className={styles.myInfoPosition}>Frontend Developer</div>
                 <div className={styles.myInfoCvContanier}>
