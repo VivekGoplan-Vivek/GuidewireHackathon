@@ -65,10 +65,26 @@ export default function Experience() {
               }
             </div>
           
-            <div className={styles.experienceTimerContainer}>
-                <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>years</span></div>
-                <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>months</span></div>
-                <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>days</span></div>
+           <div className={styles.experienceTimerWrapper}>
+              <div className={styles.experienceTimerContainer}>
+                  <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>years</span></div>
+                  <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>months</span></div>
+                  <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>days</span></div>
+              </div>
+              <div className={styles.experienceClockContainer}>
+                <div className={styles.experienceClock}>
+                  <div className={styles.experienceClockTime}>12</div>
+                  <div className={styles.experienceClockTimeTxt}>Hrs</div>
+                </div>
+                <div className={styles.experienceClock}>
+                  <div className={styles.experienceClockTime}>12</div>
+                  <div className={styles.experienceClockTimeTxt}>Min</div>
+                </div>
+                <div className={styles.experienceClock}>
+                  <div className={styles.experienceClockTime}>1</div>
+                  <div className={styles.experienceClockTimeTxt}>Sec</div>
+                </div>
+              </div>
             </div>
         </div>
     </>
