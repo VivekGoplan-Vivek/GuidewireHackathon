@@ -13,7 +13,7 @@ export default function Home() {
     
     <TopHeader />
     <div className={styles.homePageWrapper}>
-      <MyInfo />
+      {/* <MyInfo /> */}
       <About />
       <Experience />
       <Skills />

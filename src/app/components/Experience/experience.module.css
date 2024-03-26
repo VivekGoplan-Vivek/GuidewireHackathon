@@ -103,6 +103,17 @@
         gap: 10px;
     }
     .experienceTimerContainer{
-        margin-top: 30px;
+        margin-top: 12px;
+    }
+}
+
+@media(min-width:769px){
+    .experienceWrapper{
+        border: 1px solid #C4BEBE;
+        border-radius: 8px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 15px; 
+        margin-bottom: 20px;
     }
 }
