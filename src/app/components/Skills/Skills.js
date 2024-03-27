@@ -116,7 +116,7 @@ export default function Skills() {
                 {
                     SKILLS_DATA_WEBSITE.map((data,index)=>{
                         return(
-                            <SkillInfo data={data}/>
+                            <SkillInfo data={data} key={index}/>
                         )
                     })
                 }
@@ -126,7 +126,7 @@ export default function Skills() {
                 {
                     SKILLS_DATA_APP.map((data,index)=>{
                         return(
-                            <SkillInfo data={data}/>
+                            <SkillInfo data={data} key={index}/>
                         )
                     })
                 }
@@ -139,7 +139,7 @@ export default function Skills() {
                 {
                     SKILLS_DATA_BACKEND.map((data,index)=>{
                         return(
-                            <SkillInfo data={data}/>
+                            <SkillInfo data={data} key={index}/>
                         )
                     })
                 }
