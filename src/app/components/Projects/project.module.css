@@ -1,0 +1,125 @@
+.projectCompanyWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.projectCompanyname{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.projectViewDetails{
+    font-size: 10px;
+    font-size: 12px;
+    color: #1501FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.projectCardWrapper{
+
+}
+
+.projectHeaderTxt{
+    font-size: 14px;
+}
+.projectRedirection{
+    color: #1501FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.projectCardContainer{
+    border: 1px solid;
+    width: 294px;
+    height: 228px;
+    border-radius: 15px;
+    margin-top: 6px;
+}
+
+.projectCardImgContainer{
+
+}
+
+.projectCardImg{
+    width: 33.3%;
+    height: 91px;
+    border: 1px solid;
+}
+
+.projectCardDesc{
+    font-size: 14px;
+    height: 60px;
+    padding: 5px;
+}
+
+.projectTechnologyUsed{
+    font-size: 14px;
+    padding: 5px;
+}
+
+.projectActionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.projectActionViewDetails{
+    border: 1px solid #B4B4B4;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.projectLiveDemo{
+    border: 1px solid #B4B4B4;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
+
+.projectCardInfo{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+
+@media (max-width: 768px){
+    .projectCardContainer{
+        border: 1px solid;
+        width: 100%;
+        height: 228px;
+        border-radius: 15px;
+        margin-top: 6px;
+    }
+    .projectCardWrapper{
+        width: 100%;
+    }
+    .projectViewDetails{
+        font-size: 12px;
+    }
+    .projectCompanyname{
+        font-size: 12px;
+    }
+    .projectCardInfo{
+        margin-top: 12px;
+    }
+}
