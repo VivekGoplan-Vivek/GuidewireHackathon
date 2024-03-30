@@ -6,6 +6,8 @@ import Skills from "./components/Skills/Skills";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Project from "./components/Projects/Project";
+import Kudos from "./components/Kudos/Kudos";
+
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -19,6 +21,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Project />
+      <Kudos />
       <Contact />
     </div>
     </>

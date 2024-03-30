@@ -1,0 +1,32 @@
+.kudosComapnyname{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kudosImgWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+   
+}
+
+.kudosImgContainer{
+    border: 1px solid #D9D9D9;
+    width: 35%;
+    height: 228px;
+    border-radius: 5px;
+}
+
+
+@media(max-width:768px){
+    .kudosImgWrapper{
+        flex-direction: column;
+    }
+    .kudosImgContainer{
+        width: 100%;
+    }
+}
