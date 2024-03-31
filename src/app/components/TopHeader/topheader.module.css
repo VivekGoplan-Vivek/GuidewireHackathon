@@ -64,6 +64,10 @@
     font-weight: 200;
 }
 
+.topHeaderDownloadCvTxt:hover{
+    border: 1px solid blue;
+    color: #1D0AFF;
+}
 
 .listOfContent{
     list-style-type: none;

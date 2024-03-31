@@ -25,8 +25,9 @@ export default function TopHeader() {
               <li className={styles.listTxt}>Contact</li>
           </ul>
           <ul className={styles.topHeaderActivity}>
-            <li><img src="Images/linkedinlogo.webp" className={styles.topHeaderLinkedinLogo} alt="profile-pic"></img></li>
-            <li><img src="Images/githublogo.png" className={styles.topHeaderGithubLogo} alt="profile-pic"></img></li>
+            <li > <a href="https://www.linkedin.com/in/vivek-g-29206bb4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="Images/linkedinlogo.webp" className={styles.topHeaderLinkedinLogo} alt="profile-pic"></img></a></li>
+            <li> <a href="https://github.com/VivekGoplan-Vivek" target="_blank"><img src="Images/githublogo.png" className={styles.topHeaderGithubLogo} alt="profile-pic"></img>
+              </a></li>
             <li><div className={styles.topHeaderDownloadCvTxt}>Download CV</div></li>
           </ul>
         </div>
