@@ -1,4 +1,6 @@
 
+'use client';
+import { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import styles from "./experience.module.css";
 
@@ -55,6 +57,49 @@ const CompanyInfo = ({companyInfoData}) =>{
 export default function Experience() {
 
 
+  const [experienceInfo , setExperienceInfo] = useState([]);
+
+  useEffect(()=>{
+
+    const startDate = '2017-05-02';
+    const endDate = new Date();
+    const getExp = calculateExperience(startDate ,endDate )
+    setExperienceInfo(getExp);
+
+  },[])
+
+  function calculateExperience(startDate, endDate) {
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+
+    // Calculate the difference in milliseconds
+    const differenceMs = end - start;
+
+    // Convert milliseconds to years
+    const millisecondsPerYear = 1000 * 60 * 60 * 24 * 365; // Approximation for leap years
+    const years = Math.floor(differenceMs / millisecondsPerYear);
+
+    // Calculate the remaining milliseconds after subtracting full years
+    const remainingMs = differenceMs - (years * millisecondsPerYear);
+
+    // Convert remaining milliseconds to months
+    const millisecondsPerMonth = millisecondsPerYear / 12;
+    const months = Math.floor(remainingMs / millisecondsPerMonth);
+
+    // Calculate the remaining milliseconds after subtracting full months
+    const remainingMsAfterMonths = remainingMs - (months * millisecondsPerMonth);
+
+    // Convert remaining milliseconds to days
+    const millisecondsPerDay = 1000 * 60 * 60 * 24;
+    const days = Math.floor(remainingMsAfterMonths / millisecondsPerDay);
+
+    // Return the experience as an object
+    return { years, months, days };
+}
+
+
+
+
   return (
     <>
         <Header headerTxt="Experience" subTxt="Travel My" />
@@ -67,9 +112,9 @@ export default function Experience() {
           
            <div className={styles.experienceTimerWrapper}>
               <div className={styles.experienceTimerContainer}>
-                  <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>years</span></div>
-                  <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>months</span></div>
-                  <div className={styles.experienceTimer}>6 <span className={styles.experienceTimerTxt}>days</span></div>
+                  <div className={styles.experienceTimer}>{experienceInfo.years}<span className={styles.experienceTimerTxt}>years</span></div>
+                  <div className={styles.experienceTimer}>{experienceInfo.months} <span className={styles.experienceTimerTxt}>months</span></div>
+                  <div className={styles.experienceTimer}>{experienceInfo.days} <span className={styles.experienceTimerTxt}>days</span></div>
               </div>
               {/* <div className={styles.experienceClockContainer}>
                 <div className={styles.experienceClock}>
