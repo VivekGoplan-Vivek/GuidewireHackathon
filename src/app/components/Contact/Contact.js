@@ -8,12 +8,12 @@ const CONTACT_INFO = [
     {
         "img": "/Images/linkedin-logo.png",
         "contactTxt":"LinkedIn",
-        "redirect": "http://"
+        "redirect": "https://www.linkedin.com/in/vivek-g-29206bb4/"
     },
     {
         "img": "/Images/gmail-logo.png",
         "contactTxt":"Email",
-        "redirect": "http://"
+        "redirect": "mailto:gvivekg28@gmail.com"
     }
 ]
 
@@ -27,10 +27,13 @@ export default function Contact() {
             {
                 CONTACT_INFO.map((info, index) => {
                     return (
-                        <div className={styles.contactInfo} key={index}>
-                            <Image src={info.img}  width={25} height={25}  alt={info.contactTxt} style={{objectFit:'contain'}} />       
-                            <div className={styles.contactText}>{info.contactTxt}</div>
-                        </div>
+                        <a href={info.redirect} target="_blank" >
+                            <div className={styles.contactInfo} key={index}>
+                                <Image src={info.img}  width={25} height={25}  alt={info.contactTxt} style={{objectFit:'contain'}} />       
+                                <div className={styles.contactText}>{info.contactTxt}</div>
+                            </div>
+                        </a>
+                        
                     )
                 })
             }
