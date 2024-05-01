@@ -14,11 +14,6 @@ const CONTACT_INFO = [
         "img": "/Images/gmail-logo.png",
         "contactTxt":"Email",
         "redirect": "http://"
-    },
-    {
-        "img": "/Images/whatsapp-logo.webp",
-        "contactTxt":"Whatsapp",
-        "redirect": "http://"
     }
 ]
 
