@@ -29,11 +29,12 @@
 .contactText{
     font-size: 14px;
     font-weight: 600;
+    color: #918D8D;
 }
 
 .copyRightTxt{
     text-align: center;
-    font-size: 12px;
+    font-size: 8px;
     margin-top: 20px;
     opacity: 0.5;
 }

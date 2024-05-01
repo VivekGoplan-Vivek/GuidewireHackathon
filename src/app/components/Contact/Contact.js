@@ -35,7 +35,7 @@ export default function Contact() {
                 })
             }
         </div>
-        <div className={styles.copyRightTxt}>Design and Developed By Vivek Gopalan.</div>
+        <div className={styles.copyRightTxt}>Designed and Developed by Vivek Gopalan</div>
     </>
   );
 }
