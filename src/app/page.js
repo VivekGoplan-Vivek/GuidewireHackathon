@@ -15,15 +15,15 @@ export default function Home() {
     <>
     
     <TopHeader />
-    {/* <div className={styles.homePageWrapper}> */}
+    <div className={styles.homePageWrapper}>
       {/* <MyInfo /> */}
-      {/* <About />
-      <Experience />
+        <About />
+        {/* <Experience />
       <Skills />
       <Project />
       <Kudos />
       <Contact /> */}
-    {/* </div> */}
+    </div>
     </>
   );
 }
