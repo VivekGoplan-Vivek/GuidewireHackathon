@@ -19,6 +19,7 @@
     width: 77px;
     height: 77px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .topHeaderName{
     font-size: 16px;
@@ -93,6 +94,10 @@
     padding-top: 0px;
 }
 
+.topHeaderActivityMob{
+    display: none;
+}
+
 
 
 
@@ -128,6 +133,18 @@
     }
     .topHeaderTxt{
         margin: 0 auto;
+    }
+    .topHeaderActivityMob{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        align-items: center;
+        gap: 15px;
+        margin-top: 5px;
     }
    
 
