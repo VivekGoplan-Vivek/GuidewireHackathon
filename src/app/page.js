@@ -18,8 +18,8 @@ export default function Home() {
     <div className={styles.homePageWrapper}>
       {/* <MyInfo /> */}
         <About />
-        {/* <Experience />
-      <Skills />
+        <Experience />
+     {/*  <Skills />
       <Project />
       <Kudos />
       <Contact /> */}

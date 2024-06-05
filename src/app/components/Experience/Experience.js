@@ -9,38 +9,43 @@ const EXPERIENCE_DATA = [
     "designation":"Techincal Lead",
     "companyName":"Valeo Health ME",
     "yearActive":"Mar 2023 - Present",
-    "companyLogo":"Images/valeologo.png"
+    "companyLogo":"Images/valeologo.png",
+    "redirectLink":"https://feelvaleo.com/"
   },
   {
     "designation":"SDE-II",
     "companyName":"Valeo Health ME",
     "yearActive":"Mar 2022 - Feb 2023",
-    "companyLogo":"Images/valeologo.png"
+    "companyLogo":"Images/valeologo.png",
+    "redirectLink":"https://feelvaleo.com/"
   },
   {
     "designation":"Front End Developer",
     "companyName":"Myntra Designs Pvt. Ltd",
     "yearActive":"Feb 2018 - Feb 2022",
-    "companyLogo":"Images/myntralogo.png"
+    "companyLogo":"Images/myntralogo.png",
+    "redirectLink":"https://www.myntra.com/"
   },
   {
     "designation":"Front End Developer",
     "companyName":"Go Digit General Insurance Limited",
     "yearActive":"Sep 2017 - Jan 2018",
-    "companyLogo":"Images/godigitlogo.png"
+    "companyLogo":"Images/godigitlogo.png",
+    "redirectLink":"https://www.godigit.com/"
   },
   {
     "designation":"Product Engineer",
     "companyName":"Codingmart Technologies Private Limited",
     "yearActive":"May 2017 - Feb 2022",
-    "companyLogo":"Images/codingmart_technologies_logo.jpeg"
+    "companyLogo":"Images/codingmart_technologies_logo.jpeg",
+    "redirectLink":"https://codingmart.com/"
   },
 ]
 
 const CompanyInfo = ({companyInfoData}) =>{
-  const {designation="",companyName="",yearActive="",companyLogo=""} = companyInfoData || {}
+  const {designation="",companyName="",yearActive="",companyLogo="",redirectLink=""} = companyInfoData || {}
   return(
-    <div className={styles.experienceCompanyInfoWrap}>
+    <div className={styles.experienceCompanyInfoWrap} onClick={()=>window.open(redirectLink, '_blank')}>
     <div className={styles.experienceCompanyImgContainer}>
       <img src={companyLogo} className={styles.experienceCompanyLogo}></img>
     </div>
