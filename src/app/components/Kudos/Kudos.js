@@ -10,19 +10,19 @@ export default function Kudos() {
             <div className={styles.kudosComapnyname}>Myntra Designs PVT Ltd</div>
             <div className={styles.kudosImgWrapper}>
                 <div className={styles.kudosImgContainer}>
-                    <img src="" alt="kudos-image" />
+                    <img className={styles.kudosImg} src="Images/kudos/IMG_20240606_234250.jpg" alt="kudos-image" />
                 </div>
                 <div className={styles.kudosImgContainer}>
-                    <img src="" alt="kudos-image" />
+                    <img className={styles.kudosImg} src="Images/kudos/IMG_20240606_233445.jpg" alt="kudos-image" />
                 </div>
                 <div className={styles.kudosImgContainer}>
-                    <img src="" alt="kudos-image" />
+                    <img className={styles.kudosImg} src="Images/kudos/IMG_20240606_234058.jpg" alt="kudos-image" />
                 </div>
                 <div className={styles.kudosImgContainer}>
-                    <img src="" alt="kudos-image" />
+                    <img className={styles.kudosImg} src="Images/kudos/IMG_20240606_233714.jpg" alt="kudos-image" />
                 </div>
                 <div className={styles.kudosImgContainer}>
-                    <img src="" alt="kudos-image" />
+                    <img className={styles.kudosImg} src="Images/kudos/IMG_20240606_234455.jpg" alt="kudos-image" />
                 </div>
             </div>
         
