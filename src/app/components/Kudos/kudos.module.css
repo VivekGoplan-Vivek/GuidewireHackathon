@@ -20,6 +20,7 @@
     /* height: 228px; */
     border-radius: 5px;
     padding: 15px;
+    position: relative;
 }
 
 .kudosImg{
@@ -28,6 +29,21 @@
     object-fit: contain;
 }
 
+.viewKudosWrapper{
+    position: absolute;
+    width: 100%;
+    background-color: #0000008c;
+    margin: 0;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
 
 @media(max-width:768px){
     .kudosImgWrapper{
