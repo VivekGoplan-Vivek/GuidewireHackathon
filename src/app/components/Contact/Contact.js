@@ -27,7 +27,7 @@ export default function Contact() {
             {
                 CONTACT_INFO.map((info, index) => {
                     return (
-                        <a href={info.redirect} target="_blank" >
+                        <a href={info.redirect} target="_blank"  key={index}>
                             <div className={styles.contactInfo} key={index}>
                                 <Image src={info.img}  width={25} height={25}  alt={info.contactTxt} style={{objectFit:'contain'}} />       
                                 <div className={styles.contactText}>{info.contactTxt}</div>
