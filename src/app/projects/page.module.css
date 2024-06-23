@@ -1,0 +1,39 @@
+.projectPageWrapper{
+    padding: 20px;
+  
+}
+
+.projectPageCardWrap{
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.projectPageCompanyName{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.projectPageCardWrap ul{
+    margin-left: 50px;
+}
+.projectPageCardTitle{
+    font-size: 16px;
+    color: #605B5A;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.projectPageCardContent{
+    margin-left: 25px;
+    margin-top: 6px;
+}
+
+@media (min-width: 768px){
+    .projectPageWrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+        /* border: 1px solid; */
+    }
+}
