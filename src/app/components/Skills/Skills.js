@@ -10,7 +10,7 @@ const SkillInfo = ({data}) => {
         <img className={styles.skillLogo} src={skillLogo} />
         <div className={styles.skillSetContent}>
             <div className={styles.skillTxt}>{skillName}</div>
-            <div className={styles.skillStatus}>{skillStatus}</div>
+            {/* <div className={styles.skillStatus}>{skillStatus}</div> */}
         </div>
     </div>
     )
