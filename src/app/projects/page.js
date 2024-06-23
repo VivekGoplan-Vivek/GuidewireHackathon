@@ -6,6 +6,10 @@ export default function Projects() {
     console.log("ProjectCardData",ProjectCardData)
   return (
     <>
+        <div className={styles.projectPageHeader}>
+                Explore My Projects
+        </div>
+
         <div className={styles.projectPageWrapper}>
             {
                 ProjectCardData.map((data,index)=>{

@@ -1,3 +1,17 @@
+.projectPageHeader{
+    background-color: #D9D9D9;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+
+
 .projectPageWrapper{
     padding: 20px;
   
@@ -35,5 +49,9 @@
         max-width: 1000px;
         margin: 0 auto;
         /* border: 1px solid; */
+    }
+    .projectPageHeader{
+        max-width: 1000px;
+        margin: 0 auto;
     }
 }
