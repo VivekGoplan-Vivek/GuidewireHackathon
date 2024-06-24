@@ -16,7 +16,7 @@ export default function Projects() {
                 ProjectCardData.map((data,index)=>{
 
                     return(
-                        <section className={styles.projectPageCardWrap} id={`projectCard_` + index}>
+                        <section className={styles.projectPageCardWrap} id={`projectCard_` + index} key={index}>
                             <div className={styles.projectPageCompanyWrap}>
                                 <div className={styles.projectPageCompanyName}>{data.companyName}</div>
                                 <div className={styles.projectPageViewDetails} onClick={()=>window.location.href = data.redirectionUrl}>View Details</div>
