@@ -32,7 +32,7 @@ export default function Projects() {
                 ProjectCardData.map((data,index)=>{
 
                     return(
-                        <div className={styles.projectPageCardWrap} id={`projectCard_` + index}>
+                        <div className={styles.projectPageCardWrap} id={`projectCard_` + index} key={index}>
                             <div className={styles.projectPageCompanyName}>{data.companyName}</div>
                             {
                                 data.workData.map((data,index)=>{
