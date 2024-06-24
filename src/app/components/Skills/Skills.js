@@ -101,6 +101,29 @@ const SKILLS_DATA_BACKEND =[
     },
 ]
 
+const SKILLS_DATA_OTHERS =[
+    {
+        "skillName":"SEO",
+        "skillStatus":"Experienced",
+        "skillLogo":"Images/seo-analytics.png"
+    },
+    {
+        "skillName":"Analytics",
+        "skillStatus":"Experienced",
+        "skillLogo":"Images/analytics.jpg"
+    },
+    {
+        "skillName":"Firebase",
+        "skillStatus":"Experienced",
+        "skillLogo":"Images/firebase.png"
+    },
+    {
+        "skillName":"Ab Test",
+        "skillStatus":"Experienced",
+        "skillLogo":"Images/abtest.png"
+    },
+]
+
 
 export default function Skills() {
 
@@ -139,6 +162,25 @@ export default function Skills() {
             <div className={styles.skillsContainer}>
                 {
                     SKILLS_DATA_BACKEND.map((data,index)=>{
+                        return(
+                            <SkillInfo data={data} key={index}/>
+                        )
+                    })
+                }
+            </div>
+            {/* <div className={styles.skillsSubTxt}>App</div>
+            <div className={styles.skillsContainer}>
+                <SkillInfo />
+                <SkillInfo />
+                <SkillInfo />
+            </div> */}
+        </div>
+        <div className={styles.skillsWrapper}>
+            <div className={styles.skillsHeadTxt}>Others</div>
+            {/* <div className={styles.skillsSubTxt}>Website</div> */}
+            <div className={styles.skillsContainer}>
+                {
+                    SKILLS_DATA_OTHERS.map((data,index)=>{
                         return(
                             <SkillInfo data={data} key={index}/>
                         )
