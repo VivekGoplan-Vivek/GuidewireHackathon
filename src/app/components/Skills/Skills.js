@@ -107,8 +107,9 @@ export default function Skills() {
 
   return (
     <>
+        <div id="skills"></div>
         <Header subTxt="Debug My" headerTxt="Skills"/>
-        <div className={styles.skillsMainWrapper}>
+        <div className={styles.skillsMainWrapper} >
         <div className={styles.skillsWrapper}>
             <div className={styles.skillsHeadTxt}>Frontend Development</div>
             <div className={styles.skillsSubTxt}>Website</div>

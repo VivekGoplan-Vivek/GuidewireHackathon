@@ -22,6 +22,7 @@ export default function Contact() {
 
   return (
     <>
+        <div id="contact"></div>
         <Header headerTxt="Contact Me" subTxt="Get in Touch" />
         <div className={styles.contactWrapper}>
             {

@@ -8,9 +8,10 @@ export default function Projects() {
     console.log("ProjectCardData",ProjectCardData)
   return (
     <>
+        <div id="projects"></div>
        <Header subTxt="Explore My" headerTxt="Projects"/>
 
-        <div className={styles.projectPageWrapper}>
+        <div className={styles.projectPageWrapper} >
             {
                 ProjectCardData.map((data,index)=>{
 

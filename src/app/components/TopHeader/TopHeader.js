@@ -1,4 +1,4 @@
-
+'use client';
 import styles from "./topheader.module.css";
 
 
@@ -26,10 +26,26 @@ export default function TopHeader() {
           <ul className={styles.listOfContent}>
               <li className={styles.listTxt}>About</li>
               <li className={styles.listTxt}>Experience</li>
-              <li className={styles.listTxt}>Skills</li>
-              <li className={styles.listTxt}>Projects</li>
-              <li className={styles.listTxt}>Kudos</li>
-              <li className={styles.listTxt}>Contact</li>
+              <li className={styles.listTxt} onClick={()=> document.getElementById('skills').scrollIntoView({
+                behavior: 'smooth',
+                 inline: "start",
+                 block: "start",
+            })}>Skills</li>
+              <li className={styles.listTxt} onClick={()=> document.getElementById('projects').scrollIntoView({
+                behavior: 'smooth',
+                 inline: "start",
+                 block: "start",
+            })}>Projects</li>
+              <li className={styles.listTxt} onClick={()=> document.getElementById('kudos').scrollIntoView({
+                behavior: 'smooth',
+                 inline: "start",
+                 block: "start",
+            })}>Kudos</li>
+              <li className={styles.listTxt} onClick={()=> document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth',
+                 inline: "start",
+                 block: "start",
+            })}>Contact</li>
           </ul>
           <ul className={styles.topHeaderActivity}>
             <li > <a href="https://www.linkedin.com/in/vivek-g-29206bb4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="Images/linkedinlogo.webp" className={styles.topHeaderLinkedinLogo} alt="profile-pic"></img></a></li>

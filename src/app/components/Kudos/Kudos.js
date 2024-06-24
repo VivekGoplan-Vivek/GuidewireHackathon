@@ -11,6 +11,7 @@ const ViewKudosModal = ({isViewKudosImg=null,onClose={}}) => {
         //     <div className={styles.viewKudosModalWrapperClose} onClick={()=>onClose()}>X</div>
         //     <img className={styles.viewKudosModalWrapperImage} src={isViewKudosImg} alt="kudos-image" />
         // </div>
+    
         <div className={styles.modalOverlay} onClick={()=>onClose()}>
         <div className={styles.modal}>
              <img className={styles.viewKudosModalWrapperImage} src={isViewKudosImg} alt="kudos-image" />
@@ -26,7 +27,7 @@ export default function Kudos() {
     
 
     return(
-       <div>
+       <div id="kudos">
             <Header subTxt="See My" headerTxt="Kudos" />
             <div className={styles.kudosComapnyname}>Myntra Designs PVT Ltd</div>
             <div className={styles.kudosImgWrapper}>
