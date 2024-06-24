@@ -44,19 +44,19 @@ export const ProjectCardData = [
         "redirectionUrl":"/projects#projectCard_1",
         "workData":[
             {
-                title:"Myntra Insider PWA (https://www.myntra.com/myntrainsider)",
+                title:"Myntra Insider PWA (<a href=https://www.myntra.com/myntrainsider target=_blank>https://www.myntra.com/myntrainsider</a>)",
                 content:`<ul>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Integrated Supercoins flow in Myntra insider Pages.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Implemented dynamic virtual scrolling on the rewards page to improve performance and Optimized webpage load time using Webpack and code splitting.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Implemented TypeScript this project and Developed various web pages, including the rewards page, history page, and offer claimed page.</span></li>
+    <li>Integrated <i>Supercoins flow</i> in Myntra insider Pages.</li>
+    <li>Implemented <i>dynamic virtual scrolling</i> on the rewards page to improve performance and Optimized webpage load time using Webpack and code splitting.</li>
+    <li>Implemented TypeScript this project and Developed various web pages, including the rewards page, history page, and offer claimed page.</li>
 </ul>`
             },
             {
-                title:"Games",
+                title:"Game Development",
                 content:`<ul>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Developed several games (Myngo, Guess the Price, and Bargain). These games were primarily used to play and collect Insider points and coupons during EORS and BFD sales.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">A gamified journey into space to explore universes, find clues, discover hidden items, and complete missions before the universe self destructs.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Developed pre-buzz pages during EORS and BFD sales.These pages were used to buy slots, purchase coupons, and display a list of games and brand products.</span></li>
+    <li>Developed several games (Myngo, Guess the Price, and Bargain). These games were primarily used to play and collect Insider points and coupons during EORS and BFD sales.</li>
+    <li>A gamified journey into space to explore universes, find clues, discover hidden items, and complete missions before the universe self destructs.</li>
+    <li>Developed pre-buzz pages during EORS and BFD sales.These pages were used to buy slots, purchase coupons, and display a list of games and brand products.</li>
 </ul>`
             }
            
