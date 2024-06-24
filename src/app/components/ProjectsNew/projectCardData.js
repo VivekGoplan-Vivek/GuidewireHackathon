@@ -6,34 +6,28 @@ export const ProjectCardData = [
             {
                 title:"Website and Admin panel (https://feelvaleo.com) :",
                 "content":`<ul>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Developed a complete e-commerce website from scratch using NextJs and ReactJs, end to end (https://bh.getkuwa.com)</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Deployed a Website using PM2 and setup a reverse proxy on an Nginx server and Fixed Caching Issue in the website.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Optimized the Website Performance and Improve the SEO score.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Payment Integration such as Applepay, Checkout, Paytabs, tamara and developed various pages.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Integrated Clevertap(third-party library) for analytics purposes.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Setup web push notifications for the nurse panel using Firebase.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Developed a complete e-commerce website from scratch using NextJs and ReactJs, end to end (https://bh.getkuwa.com)</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Deployed a Website using PM2 and setup a reverse proxy on an Nginx server and Fixed Caching Issue in the website.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Optimized the Website Performance and Improve the SEO score.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Payment Integration such as Applepay, Checkout, Paytabs, tamara and developed various pages.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Integrated Clevertap(third-party library) for analytics purposes.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Setup web push notifications for the nurse panel using Firebase.</span></li>
+    <li>Developed a complete e-commerce website from scratch using NextJs and ReactJs, end to end <a href=https://bh.getkuwa.com target=_blank>(https://bh.getkuwa.com)</a></li>
+    <li>Deployed a Website using PM2 and setup a reverse proxy on an Nginx server and Fixed Caching Issue in the website.</li>
+    <li>Optimized the Website Performance and Improve the SEO score.</li>
+    <li>Payment Integration such as Applepay, Checkout, Paytabs, tamara and developed various pages.</li>
+    <li>Integrated Clevertap(third-party library) for analytics purposes.</li>
+    <li>Setup web push notifications for the nurse panel using Firebase.</li>
 </ul>`
             },
             {
                 title:"Mobile App",
                 content:`<ul>
     <li>
-        <p style="line-height:1.38;margin-bottom:0pt;margin-top:0pt;" dir="ltr"><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;"><span style="font-style:normal;font-variant:normal;font-weight:400;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;">Developed various screens using React Native.</span></span></p>
+        <p>Developed various screens using React Native.</p>
     </li>
     <li>
-        <p style="line-height:1.38;margin-bottom:0pt;margin-top:0pt;" dir="ltr"><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;"><span style="font-style:normal;font-variant:normal;font-weight:400;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;">Payment Integration such as applepay,checkout,paytabs,tamara.&nbsp;</span></span></p>
+        <p>Payment Integration such as applepay,checkout,paytabs,tamara.&nbsp;</p>
     </li>
     <li>
-        <p style="line-height:1.38;margin-bottom:0pt;margin-top:0pt;" dir="ltr"><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;"><span style="font-style:normal;font-variant:normal;font-weight:400;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;">Set up the Play Store and App Store rating prompt after the user receives coach feedback.</span></span></p>
+        <p>Set up the Play Store and App Store rating prompt after the user receives coach feedback.</p>
     </li>
     <li>
-        <p style="line-height:1.38;margin-bottom:0pt;margin-top:0pt;" dir="ltr"><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;"><span style="font-style:normal;font-variant:normal;font-weight:400;text-decoration:none;vertical-align:baseline;white-space:pre-wrap;">Fixed Re-render issues on mobile app screens.</span></span></p>
+        <p>Fixed Re-render issues on mobile app screens.</p>
     </li>
 </ul>`
             }
