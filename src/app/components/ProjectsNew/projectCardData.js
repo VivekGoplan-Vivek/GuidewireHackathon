@@ -70,8 +70,8 @@ export const ProjectCardData = [
             {
                 "title":`Website and AdminPanel (<a href="https://www.godigit.com/" target="_blank">https://www.godigit.com/</a>)`,
                 "content":`<ul>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">Building user interfaces for the Agent Portal to create quotations for all vehicle policies and generating the document format using technologies such as Angular and Node Js.</span></li>
-    <li><span style="background-color:transparent;color:#000000;font-family:Arial,sans-serif;font-size:11pt;">I integrated the Ezetap payment gateway on the frontend and developed an email template to send quotation details.</span></li>
+    <li>Building user interfaces for the Agent Portal to create quotations for all vehicle policies and generating the document format using technologies such as <i>Angular and Node Js</i>.</li>
+    <li>Integrated the <i>Ezetap payment gateway</i> on the frontend and developed an email template to send quotation details.</li>
 </ul>`
             }
         ]
