@@ -39,3 +39,19 @@
 .projectPageCardContent ul{
     margin-left: 20px;
 }
+
+@media (max-width:768px){
+    .projectPageViewDetails{
+        font-size: 10px;
+    }
+    .projectPageCompanyName{
+        font-size: 14px;
+    }
+    .projectPageCardTitle{
+        font-size: 12px;
+    }
+    .projectPageCardContent{
+        font-size: 11px;
+        margin-left: 15px;
+    }
+}
