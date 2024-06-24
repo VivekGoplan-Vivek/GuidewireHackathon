@@ -32,7 +32,9 @@ export default function Projects() {
                 ProjectCardData.map((data,index)=>{
 
                     return(
-                        <div className={styles.projectPageCardWrap} id={`projectCard_` + index} key={index}>
+                        <>
+                        <div id={`projectCard_` + index}></div>
+                        <div className={styles.projectPageCardWrap}  key={index}>
                             <div className={styles.projectPageCompanyName}>{data.companyName}</div>
                             {
                                 data.workData.map((data,index)=>{
@@ -46,6 +48,7 @@ export default function Projects() {
                             }
                            
                         </div>
+                        </>
                     )
                 })
             }
