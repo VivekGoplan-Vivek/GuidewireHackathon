@@ -9,7 +9,7 @@ export default function TopHeader() {
   return (
     <div className={styles.topHeaderWrapper}>
         <div className={styles.topHeaderTxt}>
-            <img src="Images/vivekgopalan.webp" className={styles.topHeaderProfilePic} alt="profile-pic"></img>
+            <img src="Images/vivekgopalan.jpg" className={styles.topHeaderProfilePic} alt="profile-pic"></img>
             <div >
               <div className={styles.topHeaderName}>Vivek Gopalan</div>
               <div className={styles.topHeaderDesignation}>Frontend Developer</div>
