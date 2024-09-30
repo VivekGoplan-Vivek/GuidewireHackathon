@@ -6,7 +6,7 @@ const PoppinsFont = Poppins({weight: ['100','200','300','400','500','600', '700'
 
 export const metadata = {
   title: "Vivek Gopalan - Portfolio",
-  description: "My Portfolio",
+  description: "Professional Journey",
 };
 
 export default function RootLayout({ children }) {
