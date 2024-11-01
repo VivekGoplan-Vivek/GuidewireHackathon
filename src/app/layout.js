@@ -5,7 +5,7 @@ import "./globals.css";
 const PoppinsFont = Poppins({weight: ['100','200','300','400','500','600', '700'], subsets: ["latin"] });
 
 export const metadata = {
-  title: "Vivek Gopalan - Portfolio",
+  title: "Vivek Gopalan - Professional Journey",
   description: "Professional Journey",
 };
 
