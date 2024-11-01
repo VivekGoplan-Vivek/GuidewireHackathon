@@ -12,7 +12,7 @@ export default function TopHeader() {
             <img src="Images/vivekgopalan.jpg" className={styles.topHeaderProfilePic} alt="profile-pic"></img>
             <div >
               <div className={styles.topHeaderName}>Vivek Gopalan</div>
-              <div className={styles.topHeaderDesignation}>Frontend Developer</div>
+              <div className={styles.topHeaderDesignation}>App/Web Developer</div>
               <ul className={styles.topHeaderActivityMob}>
               <li > <a href="https://www.linkedin.com/in/vivek-g-29206bb4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="Images/linkedinlogo.webp" className={styles.topHeaderLinkedinLogo} alt="profile-pic"></img></a></li>
               <li> <a href="https://github.com/VivekGoplan-Vivek" target="_blank"><img src="Images/githublogo.png" className={styles.topHeaderGithubLogo} alt="profile-pic"></img>

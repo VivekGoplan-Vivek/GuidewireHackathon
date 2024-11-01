@@ -138,7 +138,7 @@ export default function Skills() {
             <div className={styles.skillsSubTxt}>Website</div>
             <div className={styles.skillsContainer}>
                 {
-                    SKILLS_DATA_WEBSITE.map((data,index)=>{
+                    SKILLS_DATA_WEBSITE.reverse().map((data,index)=>{
                         return(
                             <SkillInfo data={data} key={index}/>
                         )
