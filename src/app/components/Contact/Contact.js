@@ -6,6 +6,11 @@ import Image from 'next/image'
 
 const CONTACT_INFO = [
     {
+        "img": "/Images/whatsapp-logo.webp",
+        "contactTxt":"Whatsapp",
+        "redirect": "https://api.whatsapp.com/send/?phone=9788540641&text&type=phone_number&app_absent=0"
+    },
+    {
         "img": "/Images/linkedin-logo.png",
         "contactTxt":"LinkedIn",
         "redirect": "https://www.linkedin.com/in/vivek-g-29206bb4/"
@@ -14,7 +19,8 @@ const CONTACT_INFO = [
         "img": "/Images/gmail-logo.png",
         "contactTxt":"Email",
         "redirect": "mailto:gvivekg28@gmail.com"
-    }
+    },
+  
 ]
 
 export default function Contact() {
