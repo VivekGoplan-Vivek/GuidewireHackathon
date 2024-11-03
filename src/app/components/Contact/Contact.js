@@ -8,7 +8,7 @@ const CONTACT_INFO = [
     {
         "img": "/Images/whatsapp-logo.webp",
         "contactTxt":"Whatsapp",
-        "redirect": "https://api.whatsapp.com/send/?phone=9788540641&text&type=phone_number&app_absent=0"
+        "redirect": "https://api.whatsapp.com/send/?phone=+919788540641&text&type=phone_number&app_absent=0"
     },
     {
         "img": "/Images/linkedin-logo.png",
