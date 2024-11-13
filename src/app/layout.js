@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1999142928444728"
      crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1999142928444728"      crossorigin="anonymous"></script> <!-- test --> <ins class="adsbygoogle"      style="display:block"      data-ad-client="ca-pub-1999142928444728"      data-ad-slot="9159177511"      data-ad-format="auto"      data-full-width-responsive="true"></ins> <script>      (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 <meta name="google-adsense-account" content="ca-pub-1999142928444728"/>
          <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
