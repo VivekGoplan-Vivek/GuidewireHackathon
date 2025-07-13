@@ -49,10 +49,10 @@ export default function Home() {
       <Header
         logoSrc="/Images/guidewire.svg"
         title="AI Workflow Tracker"
-        subtitle="AI-powered status tracker – Enter your Main Feature ID"
       />
       <div className={styles.homePageWrapper}>
         <div className={styles.centerBox}>
+          <div className={styles.subtitle}>AI-powered status tracker – Enter your Main Feature ID</div>
           <label className={styles.label} htmlFor="masterId">Enter Main Feature Id</label>
           <div className={styles.inputRow}>
             <input
