@@ -49,20 +49,9 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
               <span className={styles.icon}>📊</span>
               Progress:
             </span>
-            <div className={styles.progressWrapper}>
-              {/* <div className={styles.progressContainer}> */}
-                {/* <div className={styles.progressBar}>
-                  <div 
-                    className={styles.progressFill} 
-                    style={{ width: `${results.progress}%` }}
-                  ></div>
-                </div> */}
-                {/* <span className={styles.progressText}>{results.progress}%</span> */}
-              {/* </div> */}
-              <div className={styles.progressDetails}>
-                1 out of 2 features are completed. One is blocked.
-              </div>
-            </div>
+            <span className={styles.statusValue}>
+              1 out of 2 features are completed. One is blocked.
+            </span>
           </div>
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>
