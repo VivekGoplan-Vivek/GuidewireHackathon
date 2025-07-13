@@ -19,7 +19,7 @@ export default function SubFeature({ subfeatures }) {
             onClick={() => setSelected(selected === idx ? null : idx)}
           >
             <div className={styles.commentHeader}>
-              <span className={styles.commentMessage}>{sf.description}</span>
+              <span className={styles.commentMessage}>{sf.name}</span>
               <span className={`${styles.statusValue} ${styles.statusBadge} ${styles[sf.status.toLowerCase().replace(' ', '')]}`}>{sf.status}</span>
             </div>
             {selected === idx && (

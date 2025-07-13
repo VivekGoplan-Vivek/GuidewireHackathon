@@ -7,24 +7,35 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
 
 
   const riskItems = results.risks
-    .split('\n')
-    .filter(Boolean)
-    .map((item) => {
-      const match = item.match(/- \*\*(.+?)\*\*: (.+)/);
-      if (match) {
-        return {
-          title: match[1],
-          description: match[2],
-        };
-      }
-      return null;
-    })
-    .filter(Boolean);
+    ? results.risks
+        .split('\n')
+        .filter(Boolean)
+        .map((item) => {
+          const match = item.match(/- \*\*(.+?)\*\*: (.+)/);
+          if (match) {
+            return {
+              title: match[1],
+              description: match[2],
+              type: 'structured'
+            };
+          } else {
+            // Handle plain text format
+            return {
+              title: null,
+              description: item.trim(),
+              type: 'plain'
+            };
+          }
+        })
+        .filter(Boolean)
+    : [];
 
   const programDescriptionItems = results.program_description
-    .split('- ')
-    .filter(item => item.trim())
-    .map(item => item.trim());
+    ? results.program_description
+        .split('- ')
+        .filter(item => item.trim())
+        .map(item => item.trim())
+    : [];
 
   return (
     <div className={
@@ -71,14 +82,20 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
               <div className={styles.risksContent}>
                 {riskItems.map((risk, index) => (
                   <div key={index} className={styles.riskItem}>
-                    <strong>🔸 {risk.title}</strong>
-                    <p>{risk.description}</p>
+                    {risk.type === 'structured' ? (
+                      <>
+                        <strong>🔸 {risk.title}</strong>
+                        <p>{risk.description}</p>
+                      </>
+                    ) : (
+                      <p>{risk.description}</p>
+                    )}
                   </div>
                 ))}
               </div>
             </div>
           </div>}
-          <div className={styles.statusItem}>
+          {programDescriptionItems.length > 0 && <div className={styles.statusItem}>
             <div className={styles.summaryColumn}>
               <div className={styles.summaryHeader}>
                 <span className={styles.icon}>🤖</span>
@@ -92,12 +109,12 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
                 ))}
               </div>
             </div>
-          </div>
+          </div>}
         </div>
     
       </div>
       {/* SubFeature Section */}
-      <SubFeature subfeatures={results.subfeatures} />
+      <SubFeature subfeatures={results.features} />
     </div>
   );
 } 

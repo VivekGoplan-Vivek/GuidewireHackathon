@@ -91,12 +91,22 @@
   color: #fff;
 }
 
+.green {
+  background: #27ae60;
+  color: #fff;
+}
+
 .todo {
   background: #95a5a6;
   color: #fff;
 }
 
 .blocked {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.red {
   background: #e74c3c;
   color: #fff;
 }
