@@ -215,11 +215,8 @@
   .statusGrid {
     grid-template-columns: 1fr 1fr;
   }
-  .statusItem:nth-child(5),
-  .statusItem:nth-child(6),
-  .statusItem:nth-child(7),
-  .statusItem:nth-child(8),
-  .statusItem:nth-child(9) {
+  .statusItem:nth-child(3),
+  .statusItem:nth-child(4) {
     grid-column: 1 / -1;
   }
 } 
