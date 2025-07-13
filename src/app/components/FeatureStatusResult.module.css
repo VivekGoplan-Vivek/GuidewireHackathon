@@ -165,6 +165,48 @@
   font-style: italic;
 }
 
+.risksColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.risksHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b8c7e0;
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #3887FE;
+}
+
+.risksContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.riskItem {
+  padding: 8px 0;
+}
+
+.riskItem strong {
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.riskItem p {
+  color: #b8c7e0;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+}
+
 .dependenciesList {
   display: flex;
   flex-wrap: wrap;

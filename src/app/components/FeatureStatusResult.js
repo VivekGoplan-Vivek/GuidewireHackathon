@@ -69,20 +69,20 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
             </span>
           </div>
          {results && results.risks && <div className={styles.statusItem}>
-            <span className={styles.statusLabel}>
-              <span className={styles.icon}>⚠️</span>
-              Risks:
-            </span>
-            <span className={styles.statusValue}>
-              {/* {results.risks} */}
-              {riskItems.map((risk, index) => (
-                <div key={index} style={{ marginBottom: '16px' }}>
-                  <strong>🔸 {risk.title}</strong>
-                  <p>{risk.description}</p>
-                </div>
-              ))}
-            </span>
-           
+            <div className={styles.risksColumn}>
+              <div className={styles.risksHeader}>
+                <span className={styles.icon}>⚠️</span>
+                <span>Risks:</span>
+              </div>
+              <div className={styles.risksContent}>
+                {riskItems.map((risk, index) => (
+                  <div key={index} className={styles.riskItem}>
+                    <strong>🔸 {risk.title}</strong>
+                    <p>{risk.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>}
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>
