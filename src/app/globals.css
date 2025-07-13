@@ -100,4 +100,11 @@ a {
   }
 }
 
+/* Fix FeatureStatusResult overflow inside SubFeature card */
+.subFeatureDetails .resultsContainer {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
 

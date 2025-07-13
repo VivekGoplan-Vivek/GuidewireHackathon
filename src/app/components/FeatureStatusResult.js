@@ -2,11 +2,15 @@ import React from "react";
 import styles from "./FeatureStatusResult.module.css";
 import SubFeature from "./SubFeature";
 
-export default function FeatureStatusResult({ results, hideTitle = false, hideStatus = false }) {
+export default function FeatureStatusResult({ results, hideTitle = false, hideStatus = false, isSubFeature = false }) {
   if (!results) return null;
 
   return (
-    <div className={styles.resultsContainer}>
+    <div className={
+      isSubFeature
+        ? `${styles.resultsContainer} ${styles.subFeatureResult}`
+        : styles.resultsContainer
+    }>
       <div className={styles.titleRow}>
         {!hideTitle && (
           <h3 className={styles.resultsTitle}>{results.description || "Feature Details"}</h3>

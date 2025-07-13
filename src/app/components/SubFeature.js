@@ -24,7 +24,9 @@ export default function SubFeature({ subfeatures }) {
             </div>
             {selected === idx && (
               <div className={styles.subFeatureDetails}>
-                <FeatureStatusResult results={sf} hideTitle={true} hideStatus={true} />
+                <div className={styles.subFeatureResultWrapper}>
+                  <FeatureStatusResult results={sf} hideTitle={true} hideStatus={true} isSubFeature={true} />
+                </div>
               </div>
             )}
           </div>
