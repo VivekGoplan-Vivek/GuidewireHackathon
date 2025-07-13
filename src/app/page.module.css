@@ -1,6 +1,6 @@
 .homePageWrapper {
   min-height: 100vh;
-  background: #247ba0;
+  background: #15395B; /* deep blue */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,42 +9,41 @@
 }
 
 .subtitle {
-  color: #fff;
+  color: #b8c7e0; /* light gray-blue */
   font-size: 0.95rem;
   margin-bottom: 10px;
   margin-top: 12px;
   text-align: center;
   letter-spacing: 0.01em;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .centerBox {
-  background: rgba(255,255,255,0.04);
-  border-radius: 8px;
-  padding: 8px 14px 14px 14px;
+  background: #1B4266; /* lighter blue card */
+  border-radius: 16px;
+  padding: 18px 24px 24px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  /* width: 90%; */
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
 
 .label {
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 9px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 12px;
   letter-spacing: 0.01em;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .inputRow {
   display: flex;
   align-items: center;
-  background: #2e8ab8;
-  border-radius: 10px;
-  padding: 6px 10px 6px 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  background: #15395B; /* dark blue input row */
+  border-radius: 12px;
+  padding: 8px 16px 8px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   min-width: 340px;
   max-width: 420px;
 }
@@ -55,7 +54,7 @@
     border: none;
     border-radius: 6px;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     margin-right: 24px;
     outline: none;
@@ -64,16 +63,19 @@
 }
 
 .button {
-  background: #2980b9;
+  background: #3887FE; /* blue button */
   color: #fff;
   border: none;
   border-radius: 8px;
   padding: 12px 24px;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
   box-shadow: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .button:hover {
   background: #2176a5;
