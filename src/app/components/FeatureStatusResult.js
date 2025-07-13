@@ -85,11 +85,15 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
             </div>
           </div>}
           <div className={styles.statusItem}>
-            <span className={styles.statusLabel}>
-              <span className={styles.icon}>🤖</span>
-              Overall Summary:
-            </span>
-            <span className={styles.statusValue}>This initiative focuses on improving authentication flow, SSO integration, and user data privacy policies.</span>
+            <div className={styles.summaryColumn}>
+              <div className={styles.summaryHeader}>
+                <span className={styles.icon}>🤖</span>
+                <span>Overall Summary:</span>
+              </div>
+              <div className={styles.summaryContent}>
+                This initiative focuses on improving authentication flow, SSO integration, and user data privacy policies.
+              </div>
+            </div>
           </div>
         </div>
     

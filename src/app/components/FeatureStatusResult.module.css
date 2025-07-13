@@ -207,6 +207,32 @@
   margin: 0;
 }
 
+.summaryColumn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.summaryHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b8c7e0;
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #3887FE;
+}
+
+.summaryContent {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 8px 0;
+}
+
 .dependenciesList {
   display: flex;
   flex-wrap: wrap;
