@@ -16,14 +16,19 @@ export default function FeatureStatusResult({ results }) {
         <div className={styles.statusGrid}>
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>Progress:</span>
-            <div className={styles.progressContainer}>
-              <div className={styles.progressBar}>
-                <div 
-                  className={styles.progressFill} 
-                  style={{ width: `${results.progress}%` }}
-                ></div>
+            <div className={styles.progressWrapper}>
+              <div className={styles.progressContainer}>
+                <div className={styles.progressBar}>
+                  <div 
+                    className={styles.progressFill} 
+                    style={{ width: `${results.progress}%` }}
+                  ></div>
+                </div>
+                <span className={styles.progressText}>{results.progress}%</span>
               </div>
-              <span className={styles.progressText}>{results.progress}%</span>
+              <div className={styles.progressDetails}>
+                1 out of 2 features are completed. One is blocked.
+              </div>
             </div>
           </div>
          

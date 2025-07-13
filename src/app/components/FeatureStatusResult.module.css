@@ -121,6 +121,13 @@
   flex: 1;
 }
 
+.progressWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+}
+
 .progressBar {
   flex: 1;
   height: 8px;
@@ -142,6 +149,13 @@
   font-size: 14px;
   min-width: 40px;
   text-align: right;
+}
+
+.progressDetails {
+  color: #b8c7e0;
+  font-size: 13px;
+  margin-top: 8px;
+  font-style: italic;
 }
 
 .dependenciesList {
