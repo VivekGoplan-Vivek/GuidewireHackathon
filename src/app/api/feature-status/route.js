@@ -12,7 +12,7 @@ export async function GET(request) {
 
     // TODO: Replace this with your actual API call to your backend service
     // This is a mock response for demonstration purposes
-    const mockResponse = {
+    const mockResponse1 = {
       featureId: featureId,
       status: "In Progress",
       priority: "High",
@@ -79,6 +79,37 @@ export async function GET(request) {
         }
       ]
     };
+
+    const mockResponse = {
+        "name": "User Identity Management Revamp",
+        "url": "https://guidewire.aha.io/epics/DIS-E-75",
+        "program_description": "This initiative focuses on improving authentication flow, SSO integration, and user data privacy policies.",
+        "status": "Red",
+        "timeline": "2025-08-15",
+        "risks": "Backend integration is delayed. OAuth2 provider is not production ready.",
+        "progress": "1 out of 2 features are completed. One is blocked.",
+        "features": [
+          {
+            "name": "SSO Login Integration",
+            "url": "https://guidewire.aha.io/features/DIS-234",
+            "status": "Green",
+            "timeline": "2025-07-28",
+            "risks": "No current blockers.",
+            "progress": "Jira Epic is In Progress with 4 out of 6 tasks completed."
+          },
+          {
+            "name": "User Privacy Consent Flow",
+            "url": "https://guidewire.aha.io/features/DIS-235",
+            "status": "Red",
+            "timeline": "2025-07-25",
+            "risks": "Blocked on legal team approval.",
+            "progress": "Jira Epic not yet started."
+          }
+        ]
+      }
+    
+
+
 
     // Simulate API delay
     await new Promise(resolve => setTimeout(resolve, 1000));

@@ -29,15 +29,15 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
               Progress:
             </span>
             <div className={styles.progressWrapper}>
-              <div className={styles.progressContainer}>
-                <div className={styles.progressBar}>
+              {/* <div className={styles.progressContainer}> */}
+                {/* <div className={styles.progressBar}>
                   <div 
                     className={styles.progressFill} 
                     style={{ width: `${results.progress}%` }}
                   ></div>
-                </div>
-                <span className={styles.progressText}>{results.progress}%</span>
-              </div>
+                </div> */}
+                {/* <span className={styles.progressText}>{results.progress}%</span> */}
+              {/* </div> */}
               <div className={styles.progressDetails}>
                 1 out of 2 features are completed. One is blocked.
               </div>
@@ -49,22 +49,22 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
               Est. Completion:
             </span>
             <span className={styles.statusValue}>
-              {new Date(results.estimatedCompletion).toLocaleDateString()}
+              {new Date(results.timeline).toLocaleDateString()}
             </span>
           </div>
-          <div className={styles.statusItem}>
+         {results && results.risks && <div className={styles.statusItem}>
             <span className={styles.statusLabel}>
               <span className={styles.icon}>⚠️</span>
               Risks:
             </span>
             <span className={styles.statusValue}>
-              {results.risk || 'Medium'}
+              {results.risks}
             </span>
-          </div>
+          </div>}
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>
               <span className={styles.icon}>🤖</span>
-              Description:
+              Overall Summary:
             </span>
             <span className={styles.statusValue}>This initiative focuses on improving authentication flow, SSO integration, and user data privacy policies.</span>
           </div>
