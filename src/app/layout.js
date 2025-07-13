@@ -5,8 +5,8 @@ import "./globals.css";
 const PoppinsFont = Poppins({weight: ['100','200','300','400','500','600', '700'], subsets: ["latin"] });
 
 export const metadata = {
-  title: "Vivek Gopalan - Professional Journey",
-  description: "Professional Journey",
+  title: "AI Workflow Tracker",
+  description: "AI status Tracker",
 };
 
 export default function RootLayout({ children }) {
