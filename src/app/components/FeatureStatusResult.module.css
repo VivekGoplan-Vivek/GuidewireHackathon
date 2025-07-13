@@ -1,0 +1,218 @@
+.resultsContainer {
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0;
+  padding: 20px 0;
+  width: 90vw;
+  max-width: 100vw;
+  box-shadow: none;
+}
+
+.resultsTitle {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.resultsContent {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.statusGrid {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.statusItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #3498db;
+}
+
+.statusLabel {
+  color: #bdc3c7;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.statusValue {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.statusBadge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.inprogress {
+  background: #f39c12;
+  color: #fff;
+}
+
+.completed {
+  background: #27ae60;
+  color: #fff;
+}
+
+.todo {
+  background: #95a5a6;
+  color: #fff;
+}
+
+.blocked {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.priorityBadge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.high {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.medium {
+  background: #f39c12;
+  color: #fff;
+}
+
+.low {
+  background: #27ae60;
+  color: #fff;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.progressBar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 40px;
+  text-align: right;
+}
+
+.dependenciesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dependencyTag {
+  background: #34495e;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.commentsSection {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.commentsTitle {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  opacity: 0.9;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.commentItem {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 16px;
+  border-left: 3px solid #3498db;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.commentAuthor {
+  color: #3498db;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.commentTime {
+  color: #95a5a6;
+  font-size: 12px;
+}
+
+.commentMessage {
+  color: #ecf0f1;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (min-width: 768px){
+  .statusGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .statusItem:nth-child(5),
+  .statusItem:nth-child(6),
+  .statusItem:nth-child(7),
+  .statusItem:nth-child(8),
+  .statusItem:nth-child(9) {
+    grid-column: 1 / -1;
+  }
+} 

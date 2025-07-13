@@ -26,6 +26,7 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  /* width: 90%; */
 }
 
 .label {
@@ -77,6 +78,35 @@
 .button:hover {
   background: #2176a5;
 }
+
+.button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+  max-width: 420px;
+}
+
+.resultsJson {
+  color: #e8f4fd;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* All styles for FeatureStatusResult component have been removed from this file. */
 
 @media (min-width: 768px){
   .homePageWrapper{
