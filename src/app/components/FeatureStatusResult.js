@@ -55,7 +55,7 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>
               <span className={styles.icon}>⚠️</span>
-              Risk Level:
+              Risks:
             </span>
             <span className={styles.statusValue}>
               {results.risk || 'Medium'}
@@ -66,7 +66,7 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
               <span className={styles.icon}>🤖</span>
               Description:
             </span>
-            <span className={styles.statusValue}>AI analysing text</span>
+            <span className={styles.statusValue}>This initiative focuses on improving authentication flow, SSO integration, and user data privacy policies.</span>
           </div>
         </div>
     

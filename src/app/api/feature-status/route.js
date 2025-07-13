@@ -17,11 +17,11 @@ export async function GET(request) {
       status: "In Progress",
       priority: "High",
       assignee: "John Doe",
-      description: "AI-powered search functionality implementation",
+      description: "User Identity Management Revamp",
       progress: 75,
       lastUpdated: new Date().toISOString(),
       estimatedCompletion: "2024-02-15",
-      risk: "Medium",
+      risk: "Backend integration is delayed. OAuth2 provider is not production ready.",
       timeline: "Q1 2024 - Q2 2024",
       dependencies: ["DIS-230", "DIS-232"],
       comments: [
@@ -46,7 +46,7 @@ export async function GET(request) {
           progress: 100,
           lastUpdated: new Date(Date.now() - 172800000).toISOString(),
           estimatedCompletion: "2024-01-10",
-          risk: "Low",
+          risk: "Backend integration is delayed. OAuth2 provider is not production ready.",
           timeline: "Q4 2023 - Q1 2024",
           dependencies: [],
           comments: [

@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import FeatureStatusResult from "./components/FeatureStatusResult";
 
 export default function Home() {
-  const [featureId, setFeatureId] = useState("DIS-234");
+  const [featureId, setFeatureId] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [results, setResults] = useState(null);
@@ -48,12 +48,10 @@ export default function Home() {
     <>
       <Header
         logoSrc="/Images/guidewire.svg"
-        title="EDITH AI SEARCH"
+        title="AI Workflow Tracker"
+        subtitle="AI-powered status tracker – Enter your Main Feature ID"
       />
       <div className={styles.homePageWrapper}>
-        <div className={styles.subtitle}>
-          AI-powered status tracker – enter your Main Feature ID
-        </div>
         <div className={styles.centerBox}>
           <label className={styles.label} htmlFor="masterId">Enter Main Feature Id</label>
           <div className={styles.inputRow}>
