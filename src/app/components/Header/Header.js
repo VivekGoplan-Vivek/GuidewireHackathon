@@ -1,11 +1,10 @@
 import styles from './header.module.css';
 
-export default function Header({subTxt="Sub Txt", headerTxt="Header Txt"}) {
+export default function Header({ logoSrc, title }) {
     return (
-        <div className={styles.headerInfoWrapper}>
-              <div className={styles.headerSubTxt}>{subTxt}</div>
-              <div className={styles.headerTxt}>{headerTxt}</div>
+        <div className={styles.headerBar}>
+            <img src={logoSrc} alt="Guidewire Logo" className={styles.logo} />
+            <span className={styles.title}>{title}</span>
         </div>
- 
     );
-  }
+}

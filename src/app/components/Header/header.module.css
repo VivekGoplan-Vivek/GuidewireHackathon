@@ -11,6 +11,32 @@
     font-weight: 600;
 }
 
+.headerBar {
+  display: flex;
+  align-items: center;
+  background: #eaf6fb;
+  padding: 10px 24px;
+  border-bottom: 1px solid #b5d0e6;
+  position: relative;
+  justify-content: center;
+}
+
+.logo {
+  height: 36px;
+  margin-right: 18px;
+  position: absolute;
+  left: 24px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2176a5;
+  letter-spacing: 1px;
+  flex: 0 1 auto;
+  text-align: center;
+}
+
 
 @media (min-width: 768px) {
     .headerInfoWrapper{

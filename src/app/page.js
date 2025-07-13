@@ -1,29 +1,30 @@
-
-import TopHeader from "./components/TopHeader/TopHeader";
-import MyInfo from "./components/MyInfo/MyInfo";
-import Experience from "./components/Experience/Experience";
-import Skills from "./components/Skills/Skills";
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Project from "./components/ProjectsNew/Project";
-import Kudos from "./components/Kudos/Kudos";
-
+import Header from "./components/Header/Header";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
-    
-    <TopHeader />
-    <div className={styles.homePageWrapper}>
-      {/* <MyInfo /> */}
-        <About />
-        <Experience />
-        <Skills />
-        <Project />
-      <Kudos />
-      <Contact /> 
-    </div>
+      <Header
+        logoSrc="/Images/guidewire.svg"
+        title="JARVIS AI SEARCH"
+      />
+      <div className={styles.homePageWrapper}>
+        <div className={styles.subtitle}>
+          AI-powered status tracker – enter your Main Feature ID
+        </div>
+        <div className={styles.centerBox}>
+          <label className={styles.label} htmlFor="masterId">Enter Main Feature Id</label>
+          <div className={styles.inputRow}>
+            <input
+              id="masterId"
+              className={styles.input}
+              defaultValue="DIS-234"
+              type="text"
+            />
+            <button className={styles.button}>View Status</button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
