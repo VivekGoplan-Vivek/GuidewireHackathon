@@ -83,7 +83,7 @@ export async function GET(request) {
     const mockResponse = {
         "name": "User Identity Management Revamp",
         "url": "https://guidewire.aha.io/epics/DIS-E-75",
-        "program_description": "This initiative focuses on improving authentication flow, SSO integration, and user data privacy policies.",
+        "program_description": "- The epic has been moved to in progress due to the progress of its child stories.- CDP-54160 is currently in progress, focusing on the technical design and implementation for invoking connectors for the new CDA tiers.- CDP-51710 has been closed, indicating completion of development for supporting Extra Large pipelines for CDA self-service via Guidewire Home for PPP customers.- Several discussions and updates have been made regarding acceptance criteria and technical design scope.",
         "status": "Red",
         "timeline": "2025-08-15",
         "risks": `- **Scope Limitations**: The project does not include enabling enhanced CDA tiers for customer users or non-PPP tenants.

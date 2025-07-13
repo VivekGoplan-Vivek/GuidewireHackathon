@@ -34,7 +34,7 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
     }>
       <div className={styles.titleRow}>
         {!hideTitle && (
-          <h3 className={styles.resultsTitle}>{results.description || "Feature Details"}</h3>
+          <h3 className={styles.resultsTitle}>{results.name}</h3>
         )}
         {!hideStatus && (
           <span className={`${styles.statusValue} ${styles.statusBadge} ${styles[results.status.toLowerCase().replace(' ', '')]}`}>

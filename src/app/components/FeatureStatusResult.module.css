@@ -96,6 +96,14 @@
   background: #e74c3c;
   color: #fff;
 }
+.red {
+  background: #e74c3c;
+  color: #fff;
+}
+.green {
+  background: #27ae60;
+  color: #fff;
+}
 
 .priorityBadge {
   padding: 4px 12px;
