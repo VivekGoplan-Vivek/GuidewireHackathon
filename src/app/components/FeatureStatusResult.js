@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./FeatureStatusResult.module.css";
 import SubFeature from "./SubFeature";
 
 export default function FeatureStatusResult({ results, hideTitle = false, hideStatus = false, isSubFeature = false }) {
+  const [showMoreSummary, setShowMoreSummary] = useState(false);
+  
   if (!results) return null;
 
 
@@ -103,11 +105,19 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
                 <span>Progress Summary:</span>
               </div>
               <div className={styles.summaryContent}>
-                {programDescriptionItems.map((item, index) => (
+                {programDescriptionItems.slice(0, showMoreSummary ? programDescriptionItems.length : 8).map((item, index) => (
                   <p key={index} className={styles.summaryItem}>
                     {item}
                   </p>
                 ))}
+                {programDescriptionItems.length > 8 && (
+                  <button 
+                    className={styles.seeMoreButton}
+                    onClick={() => setShowMoreSummary(!showMoreSummary)}
+                  >
+                    {showMoreSummary ? 'See Less' : 'See More'}
+                  </button>
+                )}
               </div>
             </div>
           </div>}

@@ -276,6 +276,33 @@
   margin-bottom: 0;
 }
 
+.seeMoreButton {
+  background: linear-gradient(135deg, #3887FE, #2176a5);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 6px 16px;
+  font-size: 11px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 12px auto 0 auto;
+  display: block;
+  box-shadow: 0 2px 6px rgba(56, 135, 254, 0.3);
+  letter-spacing: 0.3px;
+}
+
+.seeMoreButton:hover {
+  background: linear-gradient(135deg, #2176a5, #3887FE);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(56, 135, 254, 0.4);
+}
+
+.seeMoreButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(56, 135, 254, 0.3);
+}
+
 .dependenciesList {
   display: flex;
   flex-wrap: wrap;
