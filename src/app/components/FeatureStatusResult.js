@@ -15,7 +15,10 @@ export default function FeatureStatusResult({ results }) {
       <div className={styles.resultsContent}>
         <div className={styles.statusGrid}>
           <div className={styles.statusItem}>
-            <span className={styles.statusLabel}>Progress:</span>
+            <span className={styles.statusLabel}>
+              <span className={styles.icon}>📊</span>
+              Progress:
+            </span>
             <div className={styles.progressWrapper}>
               <div className={styles.progressContainer}>
                 <div className={styles.progressBar}>
@@ -31,22 +34,30 @@ export default function FeatureStatusResult({ results }) {
               </div>
             </div>
           </div>
-         
           <div className={styles.statusItem}>
-            <span className={styles.statusLabel}>Est. Completion:</span>
+            <span className={styles.statusLabel}>
+              <span className={styles.icon}>📅</span>
+              Est. Completion:
+            </span>
             <span className={styles.statusValue}>
               {new Date(results.estimatedCompletion).toLocaleDateString()}
             </span>
           </div>
           <div className={styles.statusItem}>
-            <span className={styles.statusLabel}>Risk Level:</span>
+            <span className={styles.statusLabel}>
+              <span className={styles.icon}>⚠️</span>
+              Risk Level:
+            </span>
             <span className={styles.statusValue}>
               {results.risk || 'Medium'}
             </span>
           </div>
           <div className={styles.statusItem}>
-            <span className={styles.statusLabel}>Description:</span>
-            <span className={styles.statusValue}>{results.description}</span>
+            <span className={styles.statusLabel}>
+              <span className={styles.icon}>🤖</span>
+              Description:
+            </span>
+            <span className={styles.statusValue}>AI analysing text</span>
           </div>
         </div>
     
