@@ -233,6 +233,24 @@
   padding: 8px 0;
 }
 
+.summaryItem {
+  margin: 0 0 12px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.summaryItem:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #3887FE;
+  font-weight: bold;
+}
+
+.summaryItem:last-child {
+  margin-bottom: 0;
+}
+
 .dependenciesList {
   display: flex;
   flex-wrap: wrap;

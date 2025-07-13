@@ -21,6 +21,11 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
     })
     .filter(Boolean);
 
+  const programDescriptionItems = results.program_description
+    .split('- ')
+    .filter(item => item.trim())
+    .map(item => item.trim());
+
   return (
     <div className={
       isSubFeature
@@ -88,10 +93,14 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
             <div className={styles.summaryColumn}>
               <div className={styles.summaryHeader}>
                 <span className={styles.icon}>🤖</span>
-                <span>Overall Summary:</span>
+                <span>Program Description:</span>
               </div>
               <div className={styles.summaryContent}>
-                This initiative focuses on improving authentication flow, SSO integration, and user data privacy policies.
+                {programDescriptionItems.map((item, index) => (
+                  <p key={index} className={styles.summaryItem}>
+                    {item}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
