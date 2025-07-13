@@ -35,6 +35,48 @@ export async function GET(request) {
           message: "Integration tests passing, ready for review",
           timestamp: new Date(Date.now() - 172800000).toISOString()
         }
+      ],
+      subfeatures: [
+        {
+          featureId: "DIS-230",
+          status: "Completed",
+          priority: "Medium",
+          assignee: "Jane Smith",
+          description: "User login revamp",
+          progress: 100,
+          lastUpdated: new Date(Date.now() - 172800000).toISOString(),
+          estimatedCompletion: "2024-01-10",
+          risk: "Low",
+          timeline: "Q4 2023 - Q1 2024",
+          dependencies: [],
+          comments: [
+            {
+              author: "Jane Smith",
+              message: "Login feature released.",
+              timestamp: new Date(Date.now() - 172800000).toISOString()
+            }
+          ]
+        },
+        {
+          featureId: "DIS-232",
+          status: "Blocked",
+          priority: "High",
+          assignee: "John Doe",
+          description: "Multi-factor authentication integration",
+          progress: 50,
+          lastUpdated: new Date(Date.now() - 86400000).toISOString(),
+          estimatedCompletion: "2024-03-01",
+          risk: "High",
+          timeline: "Q1 2024",
+          dependencies: ["DIS-230"],
+          comments: [
+            {
+              author: "John Doe",
+              message: "Waiting for external vendor integration.",
+              timestamp: new Date(Date.now() - 86400000).toISOString()
+            }
+          ]
+        }
       ]
     };
 

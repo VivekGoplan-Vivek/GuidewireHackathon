@@ -1,16 +1,21 @@
 import React from "react";
 import styles from "./FeatureStatusResult.module.css";
+import SubFeature from "./SubFeature";
 
-export default function FeatureStatusResult({ results }) {
+export default function FeatureStatusResult({ results, hideTitle = false, hideStatus = false }) {
   if (!results) return null;
 
   return (
     <div className={styles.resultsContainer}>
       <div className={styles.titleRow}>
-        <h3 className={styles.resultsTitle}>User Identity Management Revamp</h3>
-        <span className={`${styles.statusValue} ${styles.statusBadge} ${styles[results.status.toLowerCase().replace(' ', '')]}`}>
-          {results.status}
-        </span>
+        {!hideTitle && (
+          <h3 className={styles.resultsTitle}>{results.description || "Feature Details"}</h3>
+        )}
+        {!hideStatus && (
+          <span className={`${styles.statusValue} ${styles.statusBadge} ${styles[results.status.toLowerCase().replace(' ', '')]}`}>
+            {results.status}
+          </span>
+        )}
       </div>
       <div className={styles.resultsContent}>
         <div className={styles.statusGrid}>
@@ -62,6 +67,8 @@ export default function FeatureStatusResult({ results }) {
         </div>
     
       </div>
+      {/* SubFeature Section */}
+      <SubFeature subfeatures={results.subfeatures} />
     </div>
   );
 } 
