@@ -5,6 +5,22 @@ import SubFeature from "./SubFeature";
 export default function FeatureStatusResult({ results, hideTitle = false, hideStatus = false, isSubFeature = false }) {
   if (!results) return null;
 
+
+  const riskItems = results.risks
+    .split('\n')
+    .filter(Boolean)
+    .map((item) => {
+      const match = item.match(/- \*\*(.+?)\*\*: (.+)/);
+      if (match) {
+        return {
+          title: match[1],
+          description: match[2],
+        };
+      }
+      return null;
+    })
+    .filter(Boolean);
+
   return (
     <div className={
       isSubFeature
@@ -58,8 +74,15 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
               Risks:
             </span>
             <span className={styles.statusValue}>
-              {results.risks}
+              {/* {results.risks} */}
+              {riskItems.map((risk, index) => (
+                <div key={index} style={{ marginBottom: '16px' }}>
+                  <strong>🔸 {risk.title}</strong>
+                  <p>{risk.description}</p>
+                </div>
+              ))}
             </span>
+           
           </div>}
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>

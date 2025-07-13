@@ -86,7 +86,10 @@ export async function GET(request) {
         "program_description": "This initiative focuses on improving authentication flow, SSO integration, and user data privacy policies.",
         "status": "Red",
         "timeline": "2025-08-15",
-        "risks": "Backend integration is delayed. OAuth2 provider is not production ready.",
+        "risks": `- **Scope Limitations**: The project does not include enabling enhanced CDA tiers for customer users or non-PPP tenants.
+- **Documentation Needs**: There is a need for updated documentation to reflect the new CDA tiers and their provisioning processes, particularly for SRE users.
+- **User Verification**: A use case for verifying the provisioned CDA tier size on the UI needs to be added.
+- **Internal Communication**: Continuous alignment and confirmation are required among team members to ensure all requirements and user journeys are clearly understood and documented.`,
         "progress": "1 out of 2 features are completed. One is blocked.",
         "features": [
           {
