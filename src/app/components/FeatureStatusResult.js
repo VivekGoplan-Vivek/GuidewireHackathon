@@ -40,7 +40,7 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
   return (
     <div className={
       isSubFeature
-        ? `${styles.resultsContainer} ${styles.subFeatureResult}`
+        ? `${styles.resultsContainerSubFeature} ${styles.subFeatureResult}`
         : styles.resultsContainer
     }>
       <div className={styles.titleRow}>
@@ -53,7 +53,8 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
           </span>
         )}
       </div>
-      <div className={styles.resultsContent}>
+      <div className={isSubFeature
+        ?styles.resultsContentSubFeature:styles.resultsContent}>
         <div className={styles.statusGrid}>
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>
@@ -99,7 +100,7 @@ export default function FeatureStatusResult({ results, hideTitle = false, hideSt
             <div className={styles.summaryColumn}>
               <div className={styles.summaryHeader}>
                 <span className={styles.icon}>🤖</span>
-                <span>Program Description:</span>
+                <span>Progress Summary:</span>
               </div>
               <div className={styles.summaryContent}>
                 {programDescriptionItems.map((item, index) => (
