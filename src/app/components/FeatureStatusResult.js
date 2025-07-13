@@ -6,16 +6,14 @@ export default function FeatureStatusResult({ results }) {
 
   return (
     <div className={styles.resultsContainer}>
-      <h3 className={styles.resultsTitle}>User Identity Management Revamp</h3>
+      <div className={styles.titleRow}>
+        <h3 className={styles.resultsTitle}>User Identity Management Revamp</h3>
+        <span className={`${styles.statusValue} ${styles.statusBadge} ${styles[results.status.toLowerCase().replace(' ', '')]}`}>
+          {results.status}
+        </span>
+      </div>
       <div className={styles.resultsContent}>
         <div className={styles.statusGrid}>
-          <div className={styles.statusItem}>
-            <span className={styles.statusLabel}>Status:</span>
-            <span className={`${styles.statusValue} ${styles.statusBadge} ${styles[results.status.toLowerCase().replace(' ', '')]}`}>
-              {results.status}
-            </span>
-          </div>
-        
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>Progress:</span>
             <div className={styles.progressContainer}>
