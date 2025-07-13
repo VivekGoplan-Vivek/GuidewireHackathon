@@ -26,15 +26,22 @@ export default function FeatureStatusResult({ results }) {
               <span className={styles.progressText}>{results.progress}%</span>
             </div>
           </div>
-          <div className={styles.statusItem}>
-            <span className={styles.statusLabel}>Description:</span>
-            <span className={styles.statusValue}>{results.description}</span>
-          </div>
+         
           <div className={styles.statusItem}>
             <span className={styles.statusLabel}>Est. Completion:</span>
             <span className={styles.statusValue}>
               {new Date(results.estimatedCompletion).toLocaleDateString()}
             </span>
+          </div>
+          <div className={styles.statusItem}>
+            <span className={styles.statusLabel}>Risk Level:</span>
+            <span className={styles.statusValue}>
+              {results.risk || 'Medium'}
+            </span>
+          </div>
+          <div className={styles.statusItem}>
+            <span className={styles.statusLabel}>Description:</span>
+            <span className={styles.statusValue}>{results.description}</span>
           </div>
         </div>
     

@@ -21,6 +21,8 @@ export async function GET(request) {
       progress: 75,
       lastUpdated: new Date().toISOString(),
       estimatedCompletion: "2024-02-15",
+      risk: "Medium",
+      timeline: "Q1 2024 - Q2 2024",
       dependencies: ["DIS-230", "DIS-232"],
       comments: [
         {
